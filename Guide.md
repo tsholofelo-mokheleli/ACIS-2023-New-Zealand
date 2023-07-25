@@ -8,7 +8,7 @@ Conducting a comparative evaluation of class imbalance techniques on a mental he
 
    c. **Ensemble Techniques:** Utilize ensemble methods like Random Forest or Boosting algorithms, which can handle class imbalance effectively.
 
-   d. **Algorithm-specific Methods:** Certain algorithms, like XGBoost or LightGBM, have parameters or techniques specifically designed to handle class imbalance.
+   d. **Algorithm-specific Methods:** Certain algorithms, like XGBoost or LightGBM, have specific parameters or techniques to handle class imbalance.
 
 2. **Split Dataset:** Split your mental health dataset into training and testing sets. Ensure that the class distribution remains imbalanced in the training set, as this reflects real-world scenarios.
 
