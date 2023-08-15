@@ -79,3 +79,39 @@ When evaluating the performance of classifiers after applying dimensionality red
 
 It's also worth considering reporting multiple evaluation metrics using different averaging strategies to provide a comprehensive view of your classifier's performance. Additionally, consider conducting experiments and comparing the results using different averaging techniques to understand how class imbalance and dimensionality reduction impact your evaluation metrics.
 
+
+---
+
+When it comes to multi-class, supervised dimensionality reduction techniques, several methods can be effective for reducing the dimensionality of your dataset while preserving the class structure and improving classification performance. Here are some popular supervised dimensionality reduction techniques for multi-class problems:
+
+1. **Linear Discriminant Analysis (LDA):**
+   Linear Discriminant Analysis aims to maximize the between-class scatter and minimize the within-class scatter. It projects the data onto a lower-dimensional space while maximizing the class separability. LDA is particularly effective for multi-class classification tasks.
+
+2. **Local Fisher Discriminant Analysis (LFDA):**
+   LFDA is an extension of LDA that takes into account the local neighborhood structure of data points. It tries to preserve the local structure of the data, which can be beneficial for nonlinear class boundaries.
+
+3. **Multi-Discriminant Analysis (MDA):**
+   MDA extends LDA to multiple classes by maximizing the between-class scatter and minimizing the within-class scatter while considering all classes simultaneously. It can lead to better class separability in multi-class problems.
+
+4. **Supervised Principal Component Analysis (Supervised PCA):**
+   Supervised PCA aims to maximize the variance between classes while minimizing the variance within each class. It considers class labels to guide the dimensionality reduction process.
+
+5. **Quadratic Discriminant Analysis (QDA):**
+   QDA is an extension of LDA that relaxes the assumption of equal covariance matrices across classes. It can capture more complex relationships between classes but requires more data.
+
+6. **Canonical Correlation Analysis (CCA):**
+   CCA finds linear combinations of features that maximize the correlation between classes. It's useful when you have multiple sets of features and you want to find common structures between them.
+
+7. **N-Dimensional Fisher Discriminant (NDF):**
+   NDF generalizes LDA to higher dimensions by maximizing the difference between the mean vectors of classes and minimizing the sum of covariances.
+
+8. **Neighborhood Component Analysis (NCA):**
+   NCA learns a linear transformation that directly maximizes the classification performance by considering the k-nearest neighbors.
+
+9. **Spectral Regression Discriminant Analysis (SRDA):**
+   SRDA combines linear regression with LDA to enhance the discriminant power of the projected space.
+
+10. **Discriminative Analysis for dimensionality REduction (DARE):**
+    DARE focuses on finding a low-dimensional representation that enhances class separability while taking into account both the local and global structure of data.
+
+The choice of the best technique depends on the characteristics of your dataset, the specific problem you're trying to solve, and the trade-off between complexity and interpretability. It's recommended to experiment with a few different techniques and evaluate their impact on your classification performance through cross-validation or other appropriate evaluation methods.
